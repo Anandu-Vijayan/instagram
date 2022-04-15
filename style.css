@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18%;
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+header .logo {
+    height: 29px;
+}
+
+header .logo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+header .search-bar {
+    width: 250px;
+    background-color: rgba(239, 239, 239, 1);
+    padding: 3px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+header .search-bar input {
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(239, 239, 239, 1);
+    padding-left: 10px;
+    font-size: 15px;
+    color: #8e8e88;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+header nav ul li a i {
+    font-size: 22px;
+    color: rgba(38, 38, 38, 1);
+}
+
+section {
+    padding: 30px 18%;
+    background-color: #fafafa;
+    display: flex;
+
+}
+
+.left {
+    width: 65%;
+
+}
+
+.story {
+    display: flex;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+}
+
+.story .storys {
+    width: 17%;
+
+}
+
+.story .storys a img {
+    border-radius: 50px;
+    border: 2px solid #c62d8f;
+    padding: 1px;
+    object-fit: cover;
+}
+
+.story .storys p {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #262626;
+    font-size: smallerx
+}
+
+.post {
+    margin: 25px 0;
+    background-color: white;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+}
+
+.post .post-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+}
+
+.post .post-title .post-left {
+    display: flex;
+    align-items: center;
+}
+
+.post .post-title .post-left .photo {
+    margin-right: 15px;
+}
+
+.post .post-title .post-left .photo img {
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.post .post-title .post-left .discription .name {
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.post .post-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post .post-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.post .post-footer .like-share-comment i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.post .post-footer .save {
+    font-size: 22px;
+}
+
+.post .post-footer-content {
+    padding: 0 16px 16px 16px;
+}
+
+.post .post-footer-content p {
+    margin-bottom: 3px;
+}
+
+.post .post-footer-content .likes {
+    margin-bottom: 8px;
+}
+
+.post .post-footer-content .comment {
+    color: rgb(191, 191, 191);
+    font-size: 14px;
+}
+
+.post .post-footer-content .name {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+}
+
+.post .post-footer-content .posting-time {
+    font-size: 10px;
+    color: rgb(191, 191, 191);
+    margin-top: 6px;
+}
+
+.post .add-comment {
+    padding: 16px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.suggestion-right1 {
+    text-decoration: none;
+    color: rgb(0,149,246);
+}
+.suggestion-right2{
+    text-decoration: none;
+    color: rgb(0,149,246);
+
+}
+
+.post .add-comment .left-side {
+    display: flex;
+    align-items: center;
+}
+
+.post .add-comment .left-side i {
+    font-size: 22px;
+    margin-right: 15px;
+}
+.discription p{
+    margin: 0;
+}
+.details p{
+    margin: 0;
+
+}
+
+.post .add-comment .left-side input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: rgb(163, 163, 163);
+}
+.right {
+    width: 35%;
+    margin-top: 15px;
+    position: fixed;
+    right: 30px;
+}
+
+.right .profile-title {
+    display: flex;
+    align-items: center;
+}
+
+.right .profile-title .profile-left {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+
+}
+.right .profile-title .profile-left .photo img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.right .profile-title .profile-left  .details .name{
+    padding-bottom: 3px;
+}
+.suggestions{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.suggestions p{
+    margin-right: 139px;
+    font-size: smaller;
+}
+.suggestion-right1 p{
+    font-size: smaller;
+
+}
+.suggestions p:last-child {
+    margin-right: 0px;
+}    
+.suggestion-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.suggestion-title .suggestion-left{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+.suggestion-title .suggestion-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.suggestion-title .suggestion-left .details .name{
+    padding-bottom: 3px;
+}
+.surname{
+    color: #8e8e88;
+    font-size: smaller;
+}
+.location{
+    color: #8e8e88;
+    font-size: smaller;
+
+}
+.name{
+    color: rgb(38,38,38);
+    font-size: small;
+}
+
+
+
+
+
+@media (max-width:945px){
+    header{
+        padding: 10px 20px;
+    }
+    section .left{
+        width: 100%;
+    }
+    section .right{
+        display: none;
+    }
+}
+@media (max-width:733px){
+    header .search-bar{
+        display: none;
+    }
+    section{
+        padding: 30px 20px;
+    }
+
+}
+@media (max-width:500px){
+    .story .storys{
+        width: 25%;
+    }
+    header nav ul li{
+        margin-right: 10px;
+    }
+}
+@media (max-width:1219px){
+    .story .storys{
+        width: 20%;
+    }
+
+}
+@media (max-width:941px){
+    .story .storys{
+        width: 20%;
+    }
+
+}
+@media (max-width:733px){
+    .story .storys{
+        width: 20%;
+    }
+
+}
+@media (max-width:437px){
+    .story .storys{
+        width: 100%;
+    }
+
+}
+
+
+
+
